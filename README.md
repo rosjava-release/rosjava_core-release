@@ -1,3 +1,22 @@
+## rosjava_core - 0.1.6-0
+
+User `snorri@snorriheim` released the packages in the `rosjava_core` repository by running `/usr/bin/bloom-release --track hydro --rosdistro hydro rosjava_core` on `Mon, 11 Nov 2013 15:23:13 -0000`
+
+The `rosjava_core` package was released.
+
+Version of package(s) in repository `rosjava_core`:
+- rosdistro version: `0.1.5-0`
+- old version: `0.1.5-0`
+- new version: `0.1.6-0`
+
+Versions of tools used:
+- bloom version: `0.4.4`
+- catkin_pkg version: `0.1.19`
+- rosdep version: `0.10.21`
+- rosdistro version: `0.2.13`
+- vcstools version: `0.1.31`
+
+
 ## rosjava_core - 0.1.5-0
 
 User `stonier@inno` released the packages in the `rosjava_core` repository by running `/usr/bin/bloom-release --track hydro --rosdistro hydro rosjava_core` on `Wed, 30 Oct 2013 23:50:34 -0000`
