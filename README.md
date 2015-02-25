@@ -1,3 +1,24 @@
+## rosjava_core (indigo) - 0.2.1-0
+
+The packages in the `rosjava_core` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --rosdistro indigo rosjava_core` on `Wed, 25 Feb 2015 13:08:04 -0000`
+
+The `rosjava_core` package was released.
+
+Version of package(s) in repository `rosjava_core`:
+- upstream repository: https://github.com/rosjava/rosjava_core
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.2.1-0`
+
+Versions of tools used:
+- bloom version: `0.5.18`
+- catkin_pkg version: `0.2.3`
+- rosdep version: `0.10.28`
+- rosdistro version: `0.4.0`
+- vcstools version: `0.1.35`
+
+
 ## rosjava_core - 0.1.6-0
 
 User `snorri@snorriheim` released the packages in the `rosjava_core` repository by running `/usr/bin/bloom-release --track hydro --rosdistro hydro rosjava_core` on `Mon, 11 Nov 2013 15:23:13 -0000`
