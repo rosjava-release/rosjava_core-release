@@ -45,7 +45,7 @@ public class NtpTimeProviderTest extends RosTest {
     nodeMainExecutor.execute(new AbstractNodeMain() {
       @Override
       public GraphName getDefaultNodeName() {
-        return GraphName.of("node");
+        return GraphName.of("ntp_time_provider");
       }
 
       @Override
@@ -61,6 +61,8 @@ public class NtpTimeProviderTest extends RosTest {
         latch.countDown();
       }
     }, nodeConfiguration);
-    assertTrue(latch.await(1, TimeUnit.SECONDS));
+    boolean result = latch.await(10, TimeUnit.SECONDS);
+    //System.out.println("Latch waiting : " + latch.getCount() + " " + result + " [" + System.currentTimeMillis() + "]");
+    assertTrue(result);
   }
 }
