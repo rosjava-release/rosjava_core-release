@@ -2,6 +2,14 @@
 Changelog
 =========
 
+0.3.1 (2017-02-22)
+------------------
+* NativeNodeMain upgraded to upstream error codes to the application.
+* Parameter Node added to new Helper module.
+* publishMavenJavaPublicationToMavenRepository -> publish
+* Gradle 2.2.1 -> 2.14.1
+* Contributors: Juan Ignacio Ubeira, Julian Cerruti
+
 0.3.0 (2016-12-13)
 ------------------
 * Updates for Kinetic release.
