@@ -2,18 +2,11 @@
 Changelog
 =========
 
-0.3.1 (2017-02-22)
+0.2.2 (2017-03-06)
 ------------------
-* NativeNodeMain upgraded to upstream error codes to the application.
-* Parameter Node added to new Helper module.
-* publishMavenJavaPublicationToMavenRepository -> publish
-* Gradle 2.2.1 -> 2.14.1
-* Contributors: Juan Ignacio Ubeira, Julian Cerruti
-
-0.3.0 (2016-12-13)
-------------------
-* Updates for Kinetic release.
-* NativeNodeMain for C++ node integration.
+* Adds fix for shutting down DefaultNodeMainExecutor ListenerGroup to prevent leak in android when activities are destroyed.
+* Added ability to remove listener from ListenerGroup to fix android_core issue `#254 <https://github.com/rosjava/rosjava_core/issues/254>`_.
+* Contributors: Dan Ambrosio, Julian Cerruti
 
 0.2.1 (2015-02-25)
 ------------------
