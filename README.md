@@ -1,3 +1,26 @@
+## rosjava_core (kinetic) - 0.3.4-1
+
+The packages in the `rosjava_core` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release rosjava_core --track kinetic --rosdistro kinetic` on `Mon, 22 May 2017 20:19:20 -0000`
+
+The `rosjava_core` package was released.
+
+Version of package(s) in repository `rosjava_core`:
+
+- upstream repository: https://github.com/rosjava/rosjava_core
+- release repository: https://github.com/rosjava-release/rosjava_core-release.git
+- rosdistro version: `0.3.3-0`
+- old version: `0.3.4-0`
+- new version: `0.3.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.1`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.6.1`
+- vcstools version: `0.1.39`
+
+
 ## rosjava_core (kinetic) - 0.3.4-0
 
 The packages in the `rosjava_core` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release rosjava_core --track kinetic --rosdistro kinetic` on `Mon, 22 May 2017 20:13:46 -0000`
