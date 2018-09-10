@@ -1,0 +1,134 @@
+ros-kinetic-rosjava-core (0.3.6-0xenial) xenial; urgency=high
+
+  * Using time=0 by default; prevents NullPointerException when using sim_time.
+  * Fix: waiting for master before getting /use_sim_time.
+  * Gradle upgraded to 3.5.1.
+  * Added Bazel build support.
+  * Supporting XMLRPC multicalls - prevents ROS master from shutting down when a launchfile is launched.
+  * Fix for race condition in RetryingExecutorService.
+  * Improved error checking and tests for rosjava_helpers.
+  * Contributors: Juan Ignacio Ubeira, Rodrigo Queiro, Wojciech Mlynarczyk.
+
+ -- Damon Kohler <damonkohler@google.com>  Thu, 06 Sep 2018 03:00:00 -0000
+
+ros-kinetic-rosjava-core (0.3.5-0xenial) xenial; urgency=high
+
+  * Fix remapping member variable not set if argument is not null
+  * Adding the capability to remove a messageListener from a subscriber.
+  * Avoid flooding log with error messages on NTP sync failure
+  * Fix to avoid logging the same error multiple times for NtpTimeProvider.
+  * Fix: avoid exceptions on node shutdown
+  * Fix to avoid spurious exceptions on node shutdown if there's an active topic.
+  * Contributors: Juan Ignacio Ubeira, Julian Cerruti, Perrine Aguiar
+
+ -- Damon Kohler <damonkohler@google.com>  Mon, 17 Jul 2017 03:00:00 -0000
+
+ros-kinetic-rosjava-core (0.3.4-0xenial) xenial; urgency=high
+
+  * Implement parameter server's searchParam
+  * fixed nullptr triggered by default node factory
+  * Contributors: Julian Cerruti, Leroy Ruegemer
+
+ -- Damon Kohler <damonkohler@google.com>  Mon, 22 May 2017 03:00:00 -0000
+
+ros-kinetic-rosjava-core (0.3.3-0xenial) xenial; urgency=high
+
+  * Added fix to remove Publishers and Subscribers from topicParticipantManager on node shutdown.
+  * Added fix to remove listeners from DefaultPublisher on shutdown.
+  * Contributors: Dan Ambrosio, Julian Cerruti
+
+ -- Damon Kohler <damonkohler@google.com>  Mon, 17 Apr 2017 03:00:00 -0000
+
+ros-kinetic-rosjava-core (0.3.2-0xenial) xenial; urgency=high
+
+  * Adds fix for shutting down DefaultNodeMainExecutor ListenerGroup to prevent leak in android when activities are destroyed.
+  * Added ability to remove listener from ListenerGroup to fix android_core issue #254 <https://github.com/rosjava/rosjava_core/issues/254>.
+
+ -- Damon Kohler <damonkohler@google.com>  Mon, 06 Mar 2017 03:00:00 -0000
+
+ros-kinetic-rosjava-core (0.3.1-0xenial) xenial; urgency=high
+
+  * NativeNodeMain upgraded to upstream error codes to the application.
+  * Parameter Node added to new Helper module.
+  * publishMavenJavaPublicationToMavenRepository -> publish
+  * Gradle 2.2.1 -> 2.14.1
+  * Contributors: Juan Ignacio Ubeira, Julian Cerruti
+
+ -- Damon Kohler <damonkohler@google.com>  Wed, 22 Feb 2017 03:00:00 -0000
+
+ros-kinetic-rosjava-core (0.3.0-0xenial) xenial; urgency=high
+
+  * Updates for Kinetic release.
+  * NativeNodeMain for C++ node integration.
+
+ -- Damon Kohler <damonkohler@google.com>  Tue, 13 Dec 2016 03:00:00 -0000
+
+ros-kinetic-rosjava-core (0.2.1-0xenial) xenial; urgency=high
+
+  * allow setting of the talker topic name in pubsub tutorial.
+  * A more robust ntp provider.
+  * gradle 1.12 -> 2.2.1
+  * Add a comment explaining the disabling of SNI.
+  * Fix SSL connection errors with Java 1.7.
+  * Adds APIs to check the status of a service connection.
+    Fixes bug that caused a disconnected service to be reused.
+    Fixes bug in DefaultSubscriber that used the wrong class for logging.
+  * Changes FrameTransformTree to use GraphName instead of FrameName but still support tf2.
+  * Removed listAllInetAddress private method.
+    Also renamed getAllInetAddressByName to getAllInetAddressesByName.
+  * Adds newNonLoopbackForNetworkInterface
+    This is needed to allow the user to specify the ROS Hostname.
+    An example application can: Run the ROS application through a VPN
+    connection. The user would like to use the tunnel interface
+    to creates the nodes and master.
+  * Contributors: Damon Kohler, Daniel Stonier, Lucas Chiesa, corot, damonkohler
+
+ -- Damon Kohler <damonkohler@google.com>  Wed, 25 Feb 2015 03:00:00 -0000
+
+ros-kinetic-rosjava-core (0.1.6-0xenial) xenial; urgency=high
+
+  * Constrain open ranged dependencies.
+
+ -- Damon Kohler <damonkohler@google.com>  Fri, 01 Nov 2013 03:00:00 -0000
+
+ros-kinetic-rosjava-core (0.1.5-0xenial) xenial; urgency=high
+
+  * use ROS_MAVEN_REPOSITORY
+
+ -- Damon Kohler <damonkohler@google.com>  Thu, 31 Oct 2013 03:00:00 -0000
+
+ros-kinetic-rosjava-core (0.1.4-0xenial) xenial; urgency=high
+
+  * official maven style open ended dependencies.
+
+ -- Damon Kohler <damonkohler@google.com>  Fri, 25 Oct 2013 03:00:00 -0000
+
+ros-kinetic-rosjava-core (0.1.3-0xenial) xenial; urgency=high
+
+  * use updated ros gradle plugins with maven-publish for publishing.
+
+ -- Damon Kohler <damonkohler@google.com>  Mon, 23 Sep 2013 03:00:00 -0000
+
+ros-kinetic-rosjava-core (0.1.2-0xenial) xenial; urgency=high
+
+  * missing sensor_msgs dependency added.
+  * gradle wrapper -> 1.7
+
+ -- Damon Kohler <damonkohler@google.com>  Tue, 17 Sep 2013 03:00:00 -0000
+
+ros-kinetic-rosjava-core (0.1.1-0xenial) xenial; urgency=high
+
+  * first official hydro release
+  * tf_msgs -> tf2_msgs upgrade
+  * fix hydro transform issues (frame naming policy)
+  * message generation code moved out
+  * message generation moved out
+  * using gradle plugins to eliminate copied build logic
+  * uses the github rosjava/rosjava_maven_repo for pulling external dependencies
+  * uses local maven repositories embedded in the ros workspaces (share/maven)
+  * cmake installation rules - deb building starting
+  * test_ros messages -> rosjava_test_msgs
+
+ -- Damon Kohler <damonkohler@google.com>  Fri, 13 Sep 2013 03:00:00 -0000
+
+
